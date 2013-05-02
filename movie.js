@@ -39,13 +39,16 @@ $(document).ready(function(){
         var title = movie['Title'];
         var genre = movie['Genre'];
         var plot = movie['Plot'];
+        var poster = movie['Poster'];
 
-        $('.descriptions').find('li').remove();
+        $('.descriptions').find('p').remove();
         document.getElementsByTagName('h2')[0].innerHTML = "";
+        $('img').remove();
 
         $('.movies').append(title);
-        $('<li>' + genre + '</li>').insertAfter('.genre');
-        $('<li>' + plot + '</li>').insertAfter('.plot');
+        $('<p>' + genre + '</p>').insertAfter('.genre');
+        $("<img src='" + poster + "'/>").insertAfter('.plot');
+        $('<p>' + plot + '</p>').insertAfter('.plot');
       }
     });
   });
