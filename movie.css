@@ -4,14 +4,24 @@ body {
   background: #138fdd;
 }
 
+h1 {
+  color: #8b0311;
+}
+
 h2 {
   text-align: center;
+  color:#c41c0a;
 }
 
 ul {
   color: #170394;
   font-weight: bold;
   padding: 0;
+  display: none;
+}
+
+img {
+  border-radius: 5%;
 }
 
 .container {

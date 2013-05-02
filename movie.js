@@ -40,12 +40,19 @@ $(document).ready(function(){
         var genre = movie['Genre'];
         var plot = movie['Plot'];
         var poster = movie['Poster'];
+        var director = movie['Director'];
+        var writer = movie['Writer'];
+        var actors = movie['Actors'];
 
         $('.descriptions').find('p').remove();
         document.getElementsByTagName('h2')[0].innerHTML = "";
         $('img').remove();
 
+        $('ul').show();
         $('.movies').append(title);
+        $('<p>' + director + '</p>').insertAfter('.director');
+        $('<p>' + writer + '</p>').insertAfter('.writer');
+        $('<p>' + actors + '</p>').insertAfter('.actors');
         $('<p>' + genre + '</p>').insertAfter('.genre');
         $('<p>' + plot + '</p>').insertAfter('.plot');
         $("<img src='" + poster + "'/>").insertAfter('.poster');
