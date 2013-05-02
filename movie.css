@@ -1,0 +1,31 @@
+body {
+  margin: auto;
+  text-align: center;
+  background: #138fdd;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  color: #170394;
+  font-weight: bold;
+  padding: 0;
+}
+
+.container {
+  width:100%;
+}
+
+.descriptions, .moviePoster {
+  width:50%;
+}
+
+.descriptions {
+  float:left;
+}
+
+.moviePoster {
+  float: right;
+}

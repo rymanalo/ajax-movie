@@ -47,8 +47,8 @@ $(document).ready(function(){
 
         $('.movies').append(title);
         $('<p>' + genre + '</p>').insertAfter('.genre');
-        $("<img src='" + poster + "'/>").insertAfter('.plot');
         $('<p>' + plot + '</p>').insertAfter('.plot');
+        $("<img src='" + poster + "'/>").insertAfter('.poster');
       }
     });
   });
