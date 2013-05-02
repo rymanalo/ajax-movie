@@ -40,6 +40,9 @@ $(document).ready(function(){
         var genre = movie['Genre'];
         var plot = movie['Plot'];
 
+        $('.descriptions').find('li').remove();
+        document.getElementsByTagName('h2')[0].innerHTML = "";
+
         $('.movies').append(title);
         $('<li>' + genre + '</li>').insertAfter('.genre');
         $('<li>' + plot + '</li>').insertAfter('.plot');
